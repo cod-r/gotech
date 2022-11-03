@@ -3,14 +3,16 @@ kind: Application
 metadata:
   name: loki-stack
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: https://grafana.github.io/helm-charts
-    targetRevision: 2.8.3
     chart: loki-stack
+    targetRevision: 2.8.3
     helm:
       values: |
         loki:
