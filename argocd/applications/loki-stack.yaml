@@ -17,6 +17,7 @@ spec:
       values: |
         loki:
           enabled: true
+          isDefault: false
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
