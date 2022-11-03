@@ -31,4 +31,3 @@ spec:
       allowEmpty: false
     syncOptions:
       - CreateNamespace=true
-      - ServerSideApply=true
