@@ -46,3 +46,12 @@ spec:
       allowEmpty: false
 EOF
 ```
+
+### Access Grafana
+```sh
+kubectl port-forward -n monitoring svc/kube-prometheus-stack-grafana 3000:80
+```
+Open http://localhost:3000
+
+Username: admin  
+Password: prom-operator
