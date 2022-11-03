@@ -3,7 +3,7 @@
 ## Install Argo CD
 ```sh
 kubectl create namespace argocd
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.4.16/manifests/install.yaml
 ```
 
 ### Access Argo CD UI

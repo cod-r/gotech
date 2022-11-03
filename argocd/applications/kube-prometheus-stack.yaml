@@ -12,6 +12,7 @@ spec:
     chart: kube-prometheus-stack
     targetRevision: 41.6.1
     helm:
+      skipCrds: true
       values: |
         prometheus:
           prometheusSpec:
