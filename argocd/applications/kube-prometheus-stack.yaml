@@ -19,10 +19,6 @@ spec:
             retention: 7d
         grafana:
           adminPassword: null
-          additionalDataSources:
-            - name: loki
-              type: loki
-              url: http://loki-stack.monitoring.svc.cluster.local:3100
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
