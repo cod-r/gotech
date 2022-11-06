@@ -17,8 +17,6 @@ spec:
         prometheus:
           prometheusSpec:
             retention: 7d
-        grafana:
-          adminPassword: null
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
